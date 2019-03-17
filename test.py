@@ -1,5 +1,4 @@
 from imdb import IMDb
-from data_structures import unique_list
 
 actors = list()
 movies = list()
@@ -25,14 +24,16 @@ def get_movies_from_actor(actor):
         return
 
     for movie in person['actor']:
-        all_movies.append(movie.movieID)
+        all_movies.append(movie)
 
-    return movies
+    return all_movies
 
 for actor in actors:
-    movies += get_movies_from_actor(actor)
+    print(actor)
+    new_movies = get_movies_from_actor(actor)
+    if new_movies is not None:
+        movies += new_movies
 
-movies = list(set(movies))
 
 print("Number of movies:", len(movies))
 print("Number of actors:", len(actors))
