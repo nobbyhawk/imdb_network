@@ -1,7 +1,7 @@
 library(readr)
 library(tidyr)
 library(igraph)
-dat <- read_csv('C:\\Users\\lasky\\Google Drive\\Graduate School _ Jobs\\NCSU MSA\\Personal Projects\\IMDB Network Analysis\\Laptop\\imdb_network\\movie_metadata.csv')
+dat <- read_csv('C:\\Users\\lasky\\Google Drive\\Graduate School _ Jobs\\NCSU MSA\\Personal Projects\\IMDB Network Analysis\\imdb_network\\movie_metadata.csv')
 colnames(dat)
 dat <- dat[,-1]
 ##columns need to be
