@@ -1,4 +1,4 @@
-,source,target,weight,ID,Type
+index,source,target,weight,ID,Type
 0,Avatar ,End of Days ,1.0,0,undirected
 1,Avatar ,Face/Off ,1.0,1,undirected
 2,Avatar ,Mystery Men ,1.0,2,undirected
